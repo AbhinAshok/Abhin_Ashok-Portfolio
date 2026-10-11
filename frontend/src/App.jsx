@@ -13,6 +13,12 @@ import Certifications from "./components/Certifications";
 
 export default function App() {
   const { data, loading, error } = usePortfolio()
+  useEffect(() => {
+  console.log('Portfolio data:', data)
+  console.log('Projects:', data?.projects)
+  console.log('Loading:', loading)
+  console.log('API error:', error)
+}, [data, loading, error])
 
   useEffect(() => {
     const onScroll = () => document.body.style.setProperty('--scroll-progress', `${window.scrollY / Math.max(1, document.documentElement.scrollHeight - window.innerHeight) * 100}%`)

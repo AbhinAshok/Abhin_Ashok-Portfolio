@@ -52,9 +52,8 @@ export default function Projects({ projects = [] }) {
               delay={index * 60}
             >
               <article
-                className={`project - card ${
-  project.demo_url ? 'project-card-clickable' : ''
-} `}
+                className={`project-card ${project.demo_url ? 'project-card-clickable' : ''
+                  }`}
               >
                 {/* Clickable image, title, description and technology tags */}
                 {project.demo_url ? (
@@ -63,13 +62,13 @@ export default function Projects({ projects = [] }) {
                     href={project.demo_url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`Open ${ project.title } live website`}
+                    aria-label={`Open ${project.title} live website`}
                   >
                     <div className="project-media">
                       {project.image_url ? (
                         <img
                           src={project.image_url}
-                          alt={`${ project.title } preview`}
+                          alt={`${project.title} preview`}
                           loading="lazy"
                           onError={(e) => {
                             e.currentTarget.style.display = 'none'
@@ -104,7 +103,7 @@ export default function Projects({ projects = [] }) {
                       {project.image_url ? (
                         <img
                           src={project.image_url}
-                          alt={`${ project.title } preview`}
+                          alt={`${project.title} preview`}
                           loading="lazy"
                           onError={(e) => {
                             e.currentTarget.style.display = 'none'
