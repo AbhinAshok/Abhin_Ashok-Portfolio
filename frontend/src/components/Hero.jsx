@@ -47,7 +47,7 @@ export default function Hero({ profile }) {
               className="hero-portrait"
               // src={profile.profile_image_url}
               // src="src/images/photo_1.png"
-              alt="Portrait of Abhin Ashok"
+              alt=" "
               onError={(event) => { event.currentTarget.style.opacity = '0.08' }}
             />
             <div className="tech-float python">Py</div>

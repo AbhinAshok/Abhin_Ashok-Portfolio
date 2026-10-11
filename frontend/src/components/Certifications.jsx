@@ -14,16 +14,14 @@ const API_ORIGIN = (
 const API_URL = `${API_ORIGIN}/api/portfolio/`;
 
 const getImageUrl = (imageUrl) => {
-  if (!imageUrl) return "";
+  if (!imageUrl) return ''
 
   if (/^https?:\/\//i.test(imageUrl)) {
-    return imageUrl;
+    return imageUrl
   }
 
-  return `${API_ORIGIN}${
-    imageUrl.startsWith("/") ? "" : "/"
-  }${imageUrl}`;
-};
+  return `${API_ORIGIN}/${imageUrl.replace(/^\/+/, '')}`
+}
 
 export default function Certifications() {
   const [certifications, setCertifications] = useState([]);
@@ -240,12 +238,16 @@ export default function Certifications() {
                 {certification.certificate_image && (
                   <div className="certificate-image-wrapper">
                     <img
-                      src={getImageUrl(
-                        certification.certificate_image
-                      )}
+                      src={getImageUrl(certification.certificate_image)}
                       alt={`${certification.title} certificate`}
                       className="certificate-image"
                       loading="lazy"
+                      onError={(event) => {
+                        console.error(
+                          'Certificate image failed to load:',
+                          event.currentTarget.src
+                        )
+                      }}
                     />
                   </div>
                 )}
