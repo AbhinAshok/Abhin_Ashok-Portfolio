@@ -199,9 +199,6 @@ export default function Certifications() {
                           );
                         }}
                       />
-                      <p style={{ color: "#22d3ee", overflowWrap: "anywhere", fontSize: 11 }}>
-                        {getImageUrl(certification.certificate_image)}
-                      </p>
                     </div>
                   )}
 
