@@ -317,3 +317,460 @@ input:focus, textarea:focus { border-color: rgba(34,211,238,.56); box-shadow: 0 
   background-clip: text;
 }
 
+@media (max-width: 768px) {
+  .site-header {
+    z-index: 1000;
+  }
+
+  .nav-shell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .brand {
+    min-width: 0;
+    font-size: 1rem;
+  }
+
+  .brand-mark {
+    flex-shrink: 0;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .nav-actions .button-small {
+    display: none;
+  }
+
+  .mobile-nav {
+    max-height: calc(100dvh - 90px);
+    overflow-y: auto;
+  }
+
+  section[id] {
+    scroll-margin-top: 90px;
+  }
+}
+
+
+
+/* ========================================
+   GLOBAL RESPONSIVE STYLES
+   Desktop, tablet, and mobile
+======================================== */
+
+/* Prevent horizontal overflow */
+html {
+  width: 100%;
+  overflow-x: clip;
+  scroll-padding-top: 90px;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  overflow-x: clip;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+.container {
+  width: min(1180px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+/* Large tablets and small laptops */
+@media (max-width: 1100px) {
+  .container {
+    width: min(100% - 36px, 1180px);
+  }
+
+  .desktop-nav {
+    gap: 16px;
+  }
+
+  .hero-grid {
+    gap: 24px;
+  }
+
+  .hero-visual {
+    min-height: 540px;
+  }
+
+  .what-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Tablets */
+@media (max-width: 980px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: inline-grid;
+  }
+
+  .mobile-nav {
+    display: grid;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: auto;
+    padding-top: 120px;
+  }
+
+  .hero-copy {
+    text-align: center;
+  }
+
+  .hero-lead {
+    margin-inline: auto;
+  }
+
+  .hero-actions,
+  .social-row {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 480px;
+    margin-top: -10px;
+  }
+
+  .about-layout,
+  .contact-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .story-panel {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .timeline-top {
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 640px) {
+  .container {
+    width: calc(100% - 24px);
+  }
+
+  .section-pad {
+    padding: 72px 0;
+  }
+
+  .site-header {
+    padding: 12px 0;
+  }
+
+  .nav-shell {
+    gap: 8px;
+  }
+
+  .brand {
+    min-width: 0;
+    font-size: 0.95rem;
+  }
+
+  .brand-mark {
+    flex-shrink: 0;
+  }
+
+  .nav-actions {
+    flex-shrink: 0;
+    gap: 7px;
+  }
+
+  .nav-actions .button-outline,
+  .nav-actions .button-small {
+    display: none;
+  }
+
+  .icon-button {
+    width: 42px;
+    height: 42px;
+  }
+
+  .mobile-nav {
+    left: 12px;
+    right: 12px;
+    top: 66px;
+    max-height: calc(100dvh - 82px);
+    overflow-y: auto;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-grid {
+    padding-top: 110px;
+    gap: 16px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.6rem, 11vw, 3.5rem);
+    line-height: 1;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-copy h2 {
+    font-size: clamp(1.15rem, 5vw, 1.4rem);
+  }
+
+  .hero-kicker {
+    font-size: 1rem;
+  }
+
+  .hero-lead {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .button {
+    min-height: 44px;
+    padding-inline: 14px;
+  }
+
+  .hero-visual {
+    min-height: 350px;
+    margin-top: 0;
+  }
+
+  .orbital-scene {
+    width: min(100%, 360px);
+  }
+
+  .tech-float {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .section-heading h2,
+  .section-title {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+
+  .about-layout,
+  .contact-shell,
+  .project-grid,
+  .skills-grid,
+  .what-grid,
+  .stats-grid,
+  .footer-grid,
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .story-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .story-copy {
+    padding: 24px;
+  }
+
+  .about-photo-wrap {
+    min-height: 280px;
+  }
+
+  .stat-card {
+    min-height: 140px;
+    padding: 22px;
+  }
+
+  .stat-card strong {
+    font-size: 2.5rem;
+  }
+
+  .projects-heading-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .filter-row {
+    justify-content: flex-start;
+  }
+
+  .project-title-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .project-body {
+    padding: 18px;
+  }
+
+  .timeline {
+    padding-left: 16px;
+  }
+
+  .timeline-item {
+    padding-left: 28px;
+  }
+
+  .timeline-card {
+    padding: 18px;
+  }
+
+  .timeline-top {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .contact-copy h2 {
+    font-size: clamp(2.25rem, 10vw, 3rem);
+  }
+
+  .contact-form-panel {
+    padding: 18px;
+  }
+
+  .footer-grid {
+    gap: 22px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  .container {
+    width: calc(100% - 20px);
+  }
+
+  .section-pad {
+    padding: 60px 0;
+  }
+
+  .brand {
+    gap: 7px;
+    font-size: 0.88rem;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nav-actions {
+    gap: 5px;
+  }
+
+  .icon-button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.45rem;
+  }
+
+  .hero-visual {
+    min-height: 300px;
+  }
+
+  .tech-float {
+    width: 38px;
+    height: 38px;
+  }
+
+  .story-copy,
+  .project-body {
+    padding: 16px;
+  }
+
+  .contact-form-panel {
+    padding: 14px;
+  }
+}
+
+/* Landscape phones */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-grid {
+    padding-top: 100px;
+  }
+
+  .hero-visual {
+    min-height: 300px;
+  }
+
+  .mobile-nav {
+    max-height: calc(100dvh - 76px);
+    overflow-y: auto;
+  }
+}
+
+/* Respect accessibility settings */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

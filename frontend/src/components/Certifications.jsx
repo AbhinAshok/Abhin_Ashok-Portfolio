@@ -4,7 +4,9 @@ import "../styles/certifications.css";
 
 const API_ORIGIN = (
   import.meta.env.VITE_API_BASE_URL ||
-  "http://127.0.0.1:8000"
+  (import.meta.env.DEV
+    ? "http://127.0.0.1:8000"
+    : "https://abhin.pythonanywhere.com")
 )
   .replace(/\/+$/, "")
   .replace(/\/api$/, "");

@@ -38,11 +38,7 @@ export default function Contact({ profile }) {
               {profile.phone ? <a href={`tel:${profile.phone}`}><span className="detail-icon">#</span><span>{profile.phone}</span></a> : null}
               <span><MapPin size={18} /><span>{profile.location}</span></span>
             </div>
-            <div className="social-row large-social">
-              <a href={profile.github_url || '#'} target="_blank" rel="noreferrer"><Github size={18} /></a>
-              <a href={profile.linkedin_url || '#'} target="_blank" rel="noreferrer"><Linkedin size={18} /></a>
-              <a href={profile.instagram_url || '#'} target="_blank" rel="noreferrer"><Instagram size={18} /></a>
-            </div>
+            
           </Reveal>
 
           <Reveal className="glass-panel contact-form-panel" delay={100}>
