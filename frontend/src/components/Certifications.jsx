@@ -2,7 +2,23 @@ import { useEffect, useState } from "react";
 import { FiAward, FiCalendar } from "react-icons/fi";
 import "../styles/certifications.css";
 
-const API_URL = "http://127.0.0.1:8000/api/portfolio/";
+const API_BASE =
+  import.meta.env.VITE_API_BASE_URL ||
+  "http://127.0.0.1:8000/api";
+
+const API_URL = `${API_BASE.replace(/\/+$/, "")}/portfolio/`;
+
+const getImageUrl = (imageUrl) => {
+  if (!imageUrl) return "";
+
+  if (/^https?:\/\//i.test(imageUrl)) {
+    return imageUrl;
+  }
+
+  const backendOrigin = API_BASE.replace(/\/api\/?$/, "");
+
+  return `${backendOrigin}${imageUrl.startsWith("/") ? "" : "/"}${imageUrl}`;
+};
 
 export default function Certifications() {
   const [certifications, setCertifications] = useState([]);

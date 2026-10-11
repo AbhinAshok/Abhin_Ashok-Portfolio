@@ -2,7 +2,16 @@ import { useEffect, useState } from "react";
 import Rocket from "../images/Rocket.png";
 import "../styles/experience.css";
 
-const API_URL = "http://127.0.0.1:8000/api/portfolio/";
+const API_ORIGIN = (
+  import.meta.env.VITE_API_BASE_URL ||
+  (import.meta.env.DEV
+    ? "http://127.0.0.1:8000"
+    : "https://abhin.pythonanywhere.com")
+)
+  .replace(/\/+$/, "")
+  .replace(/\/api$/, "");
+
+const API_URL = `${API_ORIGIN}/api/portfolio/`;
 
 export default function Experience() {
   const [experiences, setExperiences] = useState([]);

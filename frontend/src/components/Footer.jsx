@@ -1,11 +1,12 @@
 import "../styles/footer.css";
+import astroLaptop from '../images/astro-laptop.png';
 
 export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-bg-art">
         <img
-          src="src/images/astro-laptop.png"
+          src={astroLaptop}
           alt=""
           aria-hidden="true"
         />

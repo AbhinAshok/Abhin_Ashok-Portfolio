@@ -1,6 +1,7 @@
 import { Code2, Database, Layers3, Rocket } from 'lucide-react'
 import Reveal from './Reveal'
 import "../styles/about.css";
+import aboutSpace from '../images/about-space.png';
 
 export default function About({ profile }) {
   const cards = [
@@ -15,7 +16,7 @@ export default function About({ profile }) {
 
       <div className="about-background" aria-hidden="true">
         <img
-          src="src/images/about-space.png"
+          src={aboutSpace}
           alt=""
         />
       </div>
