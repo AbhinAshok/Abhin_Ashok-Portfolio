@@ -1,0 +1,137 @@
+[
+{
+  "model": "portfolio_api.project",
+  "pk": 1,
+  "fields": {
+    "title": "AirBooking – Flight Booking Platform",
+    "slug": "airbooking-flight-booking-platform",
+    "description": "A full-stack flight booking platform that allows users to search and explore available flights, view flight details, securely book seats, manage bookings, and cancel trips. The platform includes authentication, user dashboards, booking management, admin flight management, seat availability tracking, and RESTful APIs built with Django REST Framework.",
+    "image_url": "https://raw.githubusercontent.com/AbhinAshok/Air_Booking/main/screenshots/airbooking.png",
+    "demo_url": "http://airbookingz.netlify.app",
+    "github_url": "https://github.com/AbhinAshok/Air_Booking",
+    "technologies": [
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "React",
+      "JavaScript",
+      "PostgreSQL",
+      "REST API",
+      "JWT Authentication"
+    ],
+    "category": "Web Application",
+    "featured": true,
+    "sort_order": 2
+  }
+},
+{
+  "model": "portfolio_api.project",
+  "pk": 2,
+  "fields": {
+    "title": "E-Hospitality",
+    "slug": "e-hospitality",
+    "description": "A full-stack healthcare management platform that connects patients, doctors, and administrators. The platform allows patients to book appointments, make secure payments, access medical records and prescriptions, and manage billing, while doctors can manage appointments and patient information.",
+    "image_url": "https://raw.githubusercontent.com/AbhinAshok/E_Hospitality/main/frontend/public/images/E_hospitality.png",
+    "demo_url": "https://abhinashok.pythonanywhere.com/",
+    "github_url": "https://github.com/AbhinAshok/E_Hospitality",
+    "technologies": [
+      "Python",
+      "Django",
+      "Django REST Framework",
+      " React",
+      "PostgreSQL/SQL"
+    ],
+    "category": "Healthcare / Web Application",
+    "featured": true,
+    "sort_order": 1
+  }
+},
+{
+  "model": "portfolio_api.project",
+  "pk": 3,
+  "fields": {
+    "title": "Portfolio Website",
+    "slug": "portfolio-website",
+    "description": "Personal portfolio website built with modern frontend technologies, responsive layouts and motion effects.",
+    "image_url": "https://raw.githubusercontent.com/AbhinAshok/Abhin_Portfolio/main/assets/images/portfolio.png",
+    "demo_url": "",
+    "github_url": "",
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "category": "Web Application",
+    "featured": true,
+    "sort_order": 3
+  }
+},
+{
+  "model": "portfolio_api.project",
+  "pk": 4,
+  "fields": {
+    "title": "HireFlow",
+    "slug": "hireflow",
+    "description": "HireFlow is a full-stack job portal designed to simplify the recruitment process by connecting job seekers and employers on a single platform. It provides job discovery and application features for candidates, while recruiters can create job listings, manage applications, and streamline candidate recruitment through a centralized dashboard.",
+    "image_url": "https://raw.githubusercontent.com/AbhinAshok/Job_Portal/main/hireflow.png",
+    "demo_url": "https://job-portal-frontend-aqah.onrender.com/",
+    "github_url": "https://github.com/AbhinAshok/Job_Portal",
+    "technologies": [
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "React",
+      "JavaScript",
+      " JWT",
+      "SQLite"
+    ],
+    "category": "Job Portal",
+    "featured": true,
+    "sort_order": 0
+  }
+},
+{
+  "model": "portfolio_api.project",
+  "pk": 5,
+  "fields": {
+    "title": "Dr. Sujathakumari Memorial Library",
+    "slug": "dr-sujathakumari-memorial-library",
+    "description": "A modern responsive website for Dr. Sujathakumari Memorial Library, built to showcase the library's collections, events, cultural activities, gallery, and community initiatives. The website features an engaging hero section, interactive content sections, responsive navigation, image galleries, event highlights, and a mobile-friendly design.",
+    "image_url": "https://raw.githubusercontent.com/AbhinAshok/Library-website/main/public/images/library.png",
+    "demo_url": "https://abhinashok.github.io/Library-website/",
+    "github_url": "https://github.com/AbhinAshok/Library-website",
+    "technologies": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "React Router",
+      "JavaScript",
+      "Swiper",
+      "React Icons"
+    ],
+    "category": "Web Application",
+    "featured": true,
+    "sort_order": 3
+  }
+},
+{
+  "model": "portfolio_api.project",
+  "pk": 6,
+  "fields": {
+    "title": "HabitBloom-Habit Tracker",
+    "slug": "habitbloom",
+    "description": "HabitBloom is a modern habit-tracking web application designed to help users build consistent routines, track daily progress, and achieve personal goals. It provides an intuitive interface for managing habits, monitoring streaks, and visualizing progress, making it easier to stay motivated and develop positive long-term habits.",
+    "image_url": "https://raw.githubusercontent.com/AbhinAshok/Abhin_Portfolio/main/habitbloom_screenshot.png",
+    "demo_url": "https://kinetic-habitbloom.lovable.app/",
+    "github_url": "",
+    "technologies": [
+      "React",
+      "Django",
+      "REST API"
+    ],
+    "category": "Web Application",
+    "featured": true,
+    "sort_order": 5
+  }
+}
+]
