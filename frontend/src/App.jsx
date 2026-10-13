@@ -10,6 +10,7 @@ import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Certifications from "./components/Certifications";
+import { Analytics } from '@vercel/analytics/react'
 
 export default function App() {
   const { data, loading, error } = usePortfolio()
@@ -47,6 +48,8 @@ export default function App() {
       </main>
       <Footer profile={data.profile} />
       {error ? <div className="api-warning">Using local fallback content because the API is unavailable.</div> : null}
+
+      <Analytics />
     </div>
   )
 }
